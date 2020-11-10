@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {background-color: #80aaff;}
+table, th, td
+{border-style: solid;
+background-color:LightGray;}
+h1{color:#000033; font-family:"Verdana"; font-styler: italic; text-shadow: 2px 2px #ff0066;text-align: center;}
+p1{font:arial;font-size: 20px; color:#000033;text-shadow: 1px 1px #ff0066;text-align:center; }
+img{border:2px solid black;
+    border-radius: 12px;
+    display: block;
+    width:342px;
+    margin: center;
+    opacity: 0.9;
+   }
+p2{color:#660000; font-size: 40px; font:helvetica; text-align: left;}
+ul, li {list-style-type: circle;border-style: solid;}
+}
+</style>
+<script>
+function VeziViitor()
+{
+document.getElementById("numeLab").innerHTML = "IA lABORATOR 7, javascript";
+document.getElementById("numeProfil").innerHTML = "Student, Anul I, ETTI, Ciuca Andreea";
+
+var tabelEducatie = document.getElementById("tabEducatie");
+tabelEducatie.rows[0].cells[0].innerHTML=" STUDII";
+tabelEducatie.rows[0].cells[1].innerHTML=" PROFIL";
+tabelEducatie.rows[1].cells[0].innerHTML=" UTC-N";
+tabelEducatie.rows[1].cells[1].innerHTML=" ETTI";
+tabelEducatie.rows[2].cells[0].innerHTML=" CNMB";
+tabelEducatie.rows[2].cells[1].innerHTML=" Mate-Info";
+
+document.getElementById("pozaProfil").src = "Andreea1.jpg";
+
+document.body.style.backgroundColor = "#ffb3ec";
+var par = document.getElementsByTagName("p");
+var i;
+    for(i=0;i< par.length; i++)
+{
+par[i].style.color="blue";
+}
+document.getElementById("pozaProfil").style.opacity = "0.8";
+document.get.ElementByld("pozaProfil").style.border="6px";
+}
+</script>
+</head>
+
+
+<body>
+<h1 id="numeLab">FIȘĂ DE LUCRU: INFORMATICĂ APLICATĂ -LAB.7</h1>
+<h2 id= "numeProfil"> Ciuca Andreea-Carmen </h2>
+<img id="pozaProfil" src = "Andreea.jpg">
+<p2>"When given the choice between being right or being kind choose kind."</p2>
+<p> Email: Ciuca.Al.Andreea@utcluj.didatec.ro</p>
+
+<button onclick="VeziViitor()">Alta Viata</button>
+
+<h2>Educatie</h2>
+
+<table id="tabEducatie">
+  <tr>
+    <th>Institutie</th>
+    <th>An</th> 
+  </tr>
+  <tr>
+    <td>Colegiul National “Mircea cel Batran”</td>
+    <td>2016-2020</td>
+  </tr>
+  <tr>
+    <td>UTCN</td>
+    <td>2020-</td>
+  </tr>
+
+</table>
+<h2>Hobby</h2>
+
+<ul>
+  <li>Lectura</li>
+  <li>Scris</li>
+  <li>Cantat la chitara</li>
+</ul>  
+
+</body>
+</html>
