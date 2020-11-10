@@ -1,0 +1,65 @@
+<DOCTYPE html>
+<html>
+<head>
+<title> Catalog studenti</title>
+<link rel="stylesheet" type="text/css" href=" https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" type="text/css" href="imagine.css">
+</head>
+
+<body>
+<h2> Informatica Aplicata <br> anul universitar 2020-2021</h2>
+<h1> Catalog studenti</h1> 
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 3</div>
+  <img class="w3-round w3-border w3-padding w3-opacity w3-hover-sepia" src="img.jpg">
+  <div class="text"><a href="MazgaAlexandra1.html">Mazga Alexandra</a></div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 3</div>
+  <img class="w3-round w3-border w3-padding w3-opacity w3-hover-sepia" src="Enoh.png">
+  <div class="text"><a href="Comsa1.html">Comsa Enoh</a></div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <img class="w3-round w3-border w3-padding w3-opacity w3-hover-sepia" src="Emilia.jpeg">
+  <div class="text"><a href="Aldea1.html">Aldea Emila</a></div>
+</div>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+</div>
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 3000); // Change image every 3 seconds
+}
+</script>
+
+</body>
+</html> 
+
